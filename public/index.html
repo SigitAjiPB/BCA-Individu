@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/fontawesome-free-6.4.0-web/css/all.css">
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
     <title>BCA-Individu</title>
 </head>
-<body class="bg-white">
-    <div class="h-screen scrollbar-hide overflow-x-hidden">
+
+<body class="">
+    <div class="scrollbar-hide overflow-x-hidden bg-[url('../img/pageland1.jpeg')] bg-cover bg-center">
     <!--Top NavBar -->
-        <nav class="w-full shadow pl-5 py-5 pr-14 flex fixed bg-gray-800 bg-opacity-90 z-10">
-            <div class="flex justify-between w-full pr-5">
-                <span class="flex border cursor-pointer">
+        <nav class="w-full shadow pl-5 py-5 pr-8 flex fixed bg-gray-800 bg-opacity-90 z-10">
+            <div class="flex justify-between w-full pr-8">
+                <span class="flex   cursor-pointer">
                     <img class="h-10" src="../public/img/bca-logo.png" alt="bca-logo">
                 </span>
-                <div>src</div>
+                <div><i class="text-2xl text-white fa-solid fa-magnifying-glass"></i></div>
             </div>
-            <div>menu</div>
+            <div><i class="text-white text-2xl fa-solid fa-bars"></i></div>
         </nav>
 
     <!-- Bottom NavBar -->
@@ -46,12 +48,12 @@
         </nav>
 
     <!-- search input -->
-        <div class="border w-full mt-52 h-24">
-            <div class="flex flex-col px-6">
+        <div class="  w-full mt-52 h-24">
+            <div class="flex flex-col px-8">
                 <div class="flex">
-                    <input class="w-full mx-auto h-10 text-3xl rounded-md cursor-pointer bg-transparent" placeholder="Mau cari apa hari ini?" type="text">
-                    <div class="h-10 w-12 border flex rounded-full overflow-hidden bg-sky-600">
-                        <a class="pt-1 mx-auto" href="#">SRC</a>
+                    <input class="w-full mx-auto h-10 text-3xl rounded-md bg-transparent focus:outline-none text-white" placeholder="Mau cari apa hari ini?" type="text">
+                    <div class="h-10 w-12   flex rounded-full overflow-hidden bg-sky-600 hover:bg-sky-700">
+                        <a class="mx-auto flex items-center" href="#"><i class="text-white fa-solid fa-magnifying-glass"></i></a>
                     </div>
                 </div>
                 <span class="w-full mt-3 bg-white h-[3px]"></span>   
@@ -59,9 +61,9 @@
         </div>
 
     <!-- Banner card -->
-        <div class="w-full h-64 border flex px-[68px] pb-6">
-            <div class="w-full px-6 border rounded-xl bg-blue-500">
-                <div class="h-full w-full border">
+        <div class="w-full h-64 flex px-[68px] pb-6">
+            <div class="w-full px-6   rounded-xl bg-blue-500 bg-[url('../img/9.jpeg')] bg-cover bg-center">
+                <div class="h-full w-full  ">
                     <div class="w-full pt-20">
                         <p class="font-bold text-lg w-full h-8">INFO PENTING</p>
                         <a class="" href="">Nomor Terbaru <br> Layanan SMS</a>
@@ -71,47 +73,44 @@
         </div>
     
     <!-- Kurs eRate BCA -->
-    <div class="w-full h-64 border px-8 pb-8">
-        <div class="w-full h-full border rounded-xl px-6 py-4 bg-slate-500">
-            <div class="w-full h-full border">
-                <div>
-                    <a class="text-lg font-bold underline" href="#">Kurs eRate BCA</a>
-                    <div class="w-full h-8 border flex justify-between">
-                        <div class="group h-full w-8 cursor-pointer">
-                            <div class="h-full w-full border flex justify-center pr-4 group-hover:-translate-x-2">
-                                <span class="h-4 border rounded-lg m-1 rotate-[50deg] inline-block translate-x-full"></span>
-                                <span class="h-4 border rounded-lg -m-1 -rotate-[50deg] inline-block translate-y-full" ></span>
+        <div class="w-full h-64   px-8 pb-8">
+            <div class="w-full h-full rounded-xl px-6 py-4 bg-black bg-opacity-50">
+                <div class="w-full h-full  ">
+                    <div class="text-white">
+                        <a class="text-lg font-bold underline" href="#">Kurs eRate BCA</a>
+                        <div class="w-full h-8 mt-4 flex flex-row justify-between">
+                            <div class="group cursor-pointer">
+                                <div class="group-hover:-translate-x-2">
+                                    <i class="text-xl fa-solid fa-chevron-left"></i>
+                                </div>
                             </div>
-                        </div>
-                        <div class="h-full border">
-                            <div class="flex justify-between w-[70px]">
+                            <div class="flex w-[70px]">
                                 <div class="h-[25px] w-[25px] bg-sky-900 rounded-full flex justify-center pt-[3px]">
                                     <div class="h-[18px] w-[18px] rounded-full border border-dotted"></div>
                                 </div>
                                 <p class="font-bold text-lg">EUR</p>
                             </div>
-                        </div>
-                        <div class="group h-full w-8 cursor-pointer">
-                            <div class="h-full w-full border flex justify-center pr-4 group-hover:translate-x-2">
-                                <span class="h-4 border rounded-lg m-1 -rotate-[50deg] inline-block translate-x-full"></span>
-                                <span class="h-4 border rounded-lg -m-1 rotate-[50deg] inline-block translate-y-full" ></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full h-full px-6 py-2 border">
-                        <div class="w-full h-full border flex flex-col">
-                            <div class="w-full flex flex-col border">
-                                <div class="border flex justify-evenly">
-                                    <p>Beli</p>
-                                    <p>1607232</p>
+                            <div class="group cursor-pointer">
+                                <div class="group-hover:translate-x-2">
+                                    <i class="text-xl fa-solid fa-chevron-right"></i>
                                 </div>
                             </div>
-                            <span class="border w-full my-4 h-[3px] bg-white"></span>
-                            <div class="w-full border">
-                                <div class="border flex justify-evenly">
-                                    <p>Jual</p>
-                                    <p>1231231</p>
-                                </div> 
+                        </div>
+                        <div class="w-full h-full px-6 py-2 font-bold">
+                            <div class="w-full h-full   flex flex-col">
+                                <div class="w-full flex flex-col  ">
+                                    <div class="  flex justify-evenly">
+                                        <p>Beli</p>
+                                        <p>1607232</p>
+                                    </div>
+                                </div>
+                                <span class="w-full rounded-full my-4 h-[3px] bg-white"></span>
+                                <div class="w-full  ">
+                                    <div class="  flex justify-evenly">
+                                        <p>Jual</p>
+                                        <p>1231231</p>
+                                    </div> 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -121,47 +120,47 @@
     </div>
 
     <!-- Carding-Promo -->
-    <div class="w-full border mt-4 pt-4">
-        <div class="w-full border h-12 px-6">
-            <a class="text-lg font-bold" href="#" >Promo Terbaru</a>
+    <div class="w-full bg-slate-200">
+        <div class="w-full px-8 py-14">
+            <a class="text-2xl text-sky-700" href="#" >Promo Terbaru</a>
         </div>
         <div class="w-full grid grid-cols-l gap-8">
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden border rounded-xl shadow-lg bg-white">
+            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
                 <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
-                <div class=" w-full   h-2/6 border-black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div>Berlaku hingga, 31 Jan 2023</div>
+                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
             </div>
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden border rounded-xl shadow-lg bg-white">
-                <div class="w-full h-2/5 border bg-[url('../img/promo1.png')] bg-cover bg-center border-black"></div>
-                <div class=" w-full border h-2/6 border-black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div>Berlaku hingga, 31 Jan 2023</div>
+            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
+                <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
+                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
             </div>
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden border rounded-xl shadow-lg bg-white">
-                <div class="w-full h-2/5 border bg-[url('../img/promo1.png')] bg-cover bg-center border-black"></div>
-                <div class=" w-full border h-2/6 border-black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div>Berlaku hingga, 31 Jan 2023</div>
+            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
+                <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
+                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
             </div>
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden border rounded-xl shadow-lg bg-white">
-                <div class="w-full h-2/5 border bg-[url('../img/promo1.png')] bg-cover bg-center border-black"></div>
-                <div class=" w-full border h-2/6 border-black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div>Berlaku hingga, 31 Jan 2023</div>
+            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
+                <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
+                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
             </div>
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden border rounded-xl shadow-lg bg-white">
-                <div class="w-full h-2/5 border bg-[url('../img/promo1.png')] bg-cover bg-center border-black"></div>
-                <div class=" w-full border h-2/6 border-black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div>Berlaku hingga, 31 Jan 2023</div>
+            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
+                <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
+                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
             </div>
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden border rounded-xl shadow-lg bg-white">
-                <div class="w-full h-2/5 border bg-[url('../img/promo1.png')] bg-cover bg-center border-black"></div>
-                <div class=" w-full border h-2/6 border-black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div>Berlaku hingga, 31 Jan 2023</div>
+            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
+                <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
+                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
             </div>
             <div class="w-full">
                 <div class="w-full h-full flex justify-center pt-10 group">
                     <a class="text-lg" href="#">Semua Promo</a>
                     <div class="h-full w-8 flex justify-center pr-4 group-hover:translate-x-2 duration-200">
-                        <a class="h-4 align-middle border rounded-lg m-1 -rotate-[55deg] inline-block translate-x-full" href="#"></a>
-                        <a class="h-4 align-middle border rounded-lg -m-1 rotate-[55deg] inline-block translate-y-full" href="#"></a>
+                        <a class="h-4 align-middle   rounded-lg m-1 -rotate-[55deg] inline-block translate-x-full" href="#"></a>
+                        <a class="h-4 align-middle   rounded-lg -m-1 rotate-[55deg] inline-block translate-y-full" href="#"></a>
                     </div>
                 </div>
             </div>
@@ -174,15 +173,15 @@
             <ul class=" px-6 flex text-[25px] grid-cols-3 gap-10 text-sky-500 overflow-x-scroll">
                 <li class="flex flex-col group mb-8">
                     <a class="peer" href="#"> New&Features</a>
-                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500 border border-sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
+                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500    -sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
                 </li>
                 <li class="flex flex-col group">
                     <a class="peer" href="#">Edukatips</a>
-                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500 border border-sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
+                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500    -sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
                 </li>
                 <li class="flex flex-col group">
                     <a class="peer" href="#">#AwasModus</a>
-                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500 border border-sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
+                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500    -sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
                 </li>
             </ul>
         </div>
@@ -240,8 +239,8 @@
                 <div class="w-full h-full flex justify-center pt-16 group">
                     <a class="text-lg text-sky-500" href="#">Semua Berita</a>
                     <div class="h-full w-8 flex justify-center pr-4 group-hover:translate-x-2 duration-200">
-                        <a class="h-4 align-middle border border-sky-500 rounded-lg m-1 -rotate-[55deg] inline-block translate-x-full" href="#"></a>
-                        <a class="h-4 align-middle border border-sky-500 rounded-lg -m-1 rotate-[55deg] inline-block translate-y-full" href="#"></a>
+                        <a class="h-4 align-middle    -sky-500 rounded-lg m-1 -rotate-[55deg] inline-block translate-x-full" href="#"></a>
+                        <a class="h-4 align-middle    -sky-500 rounded-lg -m-1 rotate-[55deg] inline-block translate-y-full" href="#"></a>
                     </div>
                 </div>
             </div>
@@ -363,7 +362,7 @@
                         <svg class="flex-none w-6 h-6 text-white cursor-pointer" id="email" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>                          
-                        <span class="w-full mt-2 border peer-focus:border-sky-500 transition-all duration-200" id="email"></span>
+                        <span class="w-full mt-2   peer-focus: -sky-500 transition-all duration-200" id="email"></span>
                     </label>
                 </form>
             </div>
