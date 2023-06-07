@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-auto" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +10,10 @@
     <title>BCA-Individu</title>
 </head>
 
-<body class="">
-    <div class="scrollbar-hide overflow-x-hidden bg-[url('../img/pageland1.jpeg')] bg-cover bg-center">
+<body>
+    <div class="overflow-x-hidden bg-[url('../img/pageland1.jpeg')] bg-cover lg:h-screen lg:pr-24 relative">
     <!--Top NavBar -->
-        <nav class="w-full shadow pl-5 py-5 pr-8 flex fixed bg-gray-800 bg-opacity-90 z-10">
+        <nav class="w-full shadow pl-5 py-3 pr-8 flex fixed bg-gray-800 bg-opacity-90 z-10">
             <div class="flex justify-between w-full pr-8">
                 <span class="flex   cursor-pointer">
                     <img class="h-10" src="../public/img/bca-logo.png" alt="bca-logo">
@@ -24,59 +24,54 @@
         </nav>
 
     <!-- Bottom NavBar -->
-        <nav class="w-full h-20 bg-blue-500 fixed bottom-0 rounded-t-xl z-50">
-            <div class="grid grid-cols-6 w-full h-20 divide-x divide-solid">
-                <div class="flex justify-center items-center">
-                    <a href="">1</a>
-                </div>
-                <div class="flex justify-center items-center">
-                    <a href="">2</a>
-                </div>
-                <div class="flex justify-center items-center">
-                    <a href="">3</a>
-                </div>
-                <div class="flex justify-center items-center">
-                    <a href="">4</a>
-                </div>
-                <div class="flex justify-center items-center">
-                    <a href="">5</a>
-                </div>
-                <div class="flex justify-center items-center">
-                    <a href="">6</a>
-                </div>
+        <nav class="w-full h-16 fixed overflow-hidden bottom-0 rounded-t-xl lg:hidden">
+            <div class="w-full bg-purple-700 grid grid-cols-6 items-center h-full divide-x divide-solid md:divide-none lg:divide-y lg:w-24 lg:right-0 absolute ">
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><i class="text-3xl fa-solid fa-arrow-right-to-bracket"></i><span class="text-[10px]">Login</span></a>
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><ion-icon class="text-3xl" name="grid-outline"></ion-icon><span class="text-[10px]">Produk</span></a>
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><i class="text-3xl fa-solid fa-heart"></i><span class="text-[10px]">Layanan</span></a>
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><i class="text-3xl fa-sharp fa-solid fa-bag-shopping"></i><span class="text-[10px]">Promo</span></a>
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><ion-icon class="text-3xl" name="pencil-outline"></ion-icon><span class="text-[10px]">Webform BCA</span></a>
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><ion-icon class="text-3xl" name="chatbubble-ellipses-outline"></ion-icon><span class="text-[10px]">Chat</span></a>
+            </div>
+        </nav>
+        <nav class="w-24 h-16 fixed overflow-hidden bottom-0 right-0 lg:h-screen hidden lg:block">
+            <div class="bg-purple-700 grid grid-rows-6 items-center h-full divide-x divide-solid md:divide-none lg:divide-y lg:w-24 lg:h-screen lg:right-0 absolute ">
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><i class="text-3xl fa-solid fa-arrow-right-to-bracket"></i><span class="text-[10px]">Login</span></a>
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><ion-icon class="text-3xl" name="grid-outline"></ion-icon><span class="text-[10px]">Produk</span></a>
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><i class="text-3xl fa-solid fa-heart"></i><span class="text-[10px]">Layanan</span></a>
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><i class="text-3xl fa-sharp fa-solid fa-bag-shopping"></i><span class="text-[10px]">Promo</span></a>
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><ion-icon class="text-3xl" name="pencil-outline"></ion-icon><span class="text-[10px]">Webform BCA</span></a>
+                <a class="w-full flex flex-col justify-center h-full bg-sky-700 items-center text-white hover:bg-white hover:text-sky-700" href="#"><ion-icon class="text-3xl" name="chatbubble-ellipses-outline"></ion-icon><span class="text-[10px]">Chat</span></a>
             </div>
         </nav>
 
     <!-- search input -->
-        <div class="  w-full mt-52 h-24">
-            <div class="flex flex-col px-8">
-                <div class="flex">
-                    <input class="w-full mx-auto h-10 text-3xl rounded-md bg-transparent focus:outline-none text-white" placeholder="Mau cari apa hari ini?" type="text">
-                    <div class="h-10 w-12   flex rounded-full overflow-hidden bg-sky-600 hover:bg-sky-700">
-                        <a class="mx-auto flex items-center" href="#"><i class="text-white fa-solid fa-magnifying-glass"></i></a>
-                    </div>
+        <div class="w-full h-20 mt-48 flex flex-col px-8">
+            <div class="flex">
+                <input class="w-full mx-auto h-10 text-3xl rounded-md bg-transparent focus:outline-none text-white placeholder:text-slate-200" placeholder="Mau cari apa hari ini?" type="text">
+                <div class="h-10 w-12   flex rounded-full overflow-hidden bg-sky-600 hover:bg-sky-700">
+                    <a class="mx-auto flex items-center" href="#"><i class="text-white fa-solid fa-magnifying-glass"></i></a>
                 </div>
-                <span class="w-full mt-3 bg-white h-[3px]"></span>   
             </div>
+            <span class="w-full mt-2 bg-white border border-white"></span>   
         </div>
 
-    <!-- Banner card -->
-        <div class="w-full h-64 flex px-[68px] pb-6">
-            <div class="w-full px-6   rounded-xl bg-blue-500 bg-[url('../img/9.jpeg')] bg-cover bg-center">
-                <div class="h-full w-full  ">
+        <!-- template banner & kurs-rate -->
+        <div class=" lg:flex lg:min-h-max">
+            <!-- Banner card -->
+            <div class="w-full h-64 flex px-[44px] sm:px-[72px] md:px-6 lg:h-82 lg:px-6 lg:h-80">
+                <div class="w-full px-6 rounded-xl bg-[url('../img/9.jpeg')] bg-cover bg-center">
                     <div class="w-full pt-20">
-                        <p class="font-bold text-lg w-full h-8">INFO PENTING</p>
-                        <a class="" href="">Nomor Terbaru <br> Layanan SMS</a>
+                        <p class="text-slate-50 text-lg w-full h-8 md:text-lg">INFO PENTING</p>
+                        <a class="text-white font-semibold sm:text-3xl" href="">Nomor Terbaru <br class="sm:hidden"> Layanan SMS</a>
                     </div>
                 </div>
             </div>
-        </div>
-    
-    <!-- Kurs eRate BCA -->
-        <div class="w-full h-64   px-8 pb-8">
-            <div class="w-full h-full rounded-xl px-6 py-4 bg-black bg-opacity-50">
-                <div class="w-full h-full  ">
-                    <div class="text-white">
+        
+            <!-- Kurs eRate BCA -->
+            <div class="w-full min-h-max mt-4 mb-8 px-6 md:px-6 lg:basis-1/2 lg:px-6 lg:mt-0 lg:mb-10">
+                <div class="w-full h-full rounded-xl px-6 py-4 bg-black bg-opacity-50 ">
+                    <div class="w-full h-full text-white">
                         <a class="text-lg font-bold underline" href="#">Kurs eRate BCA</a>
                         <div class="w-full h-8 mt-4 flex flex-row justify-between">
                             <div class="group cursor-pointer">
@@ -85,7 +80,7 @@
                                 </div>
                             </div>
                             <div class="flex w-[70px]">
-                                <div class="h-[25px] w-[25px] bg-sky-900 rounded-full flex justify-center pt-[3px]">
+                                <div class="h-[25px] w-[25px] mr-3 bg-sky-900 rounded-full flex justify-center pt-[3px]">
                                     <div class="h-[18px] w-[18px] rounded-full border border-dotted"></div>
                                 </div>
                                 <p class="font-bold text-lg">EUR</p>
@@ -96,21 +91,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full h-full px-6 py-2 font-bold">
+                        <div class="w-full h-full px-6 py-2">
                             <div class="w-full h-full   flex flex-col">
-                                <div class="w-full flex flex-col  ">
-                                    <div class="  flex justify-evenly">
-                                        <p>Beli</p>
-                                        <p>1607232</p>
-                                    </div>
+                                <div class="w-full flex justify-evenly sm:justify-between text-xl">
+                                    <p>Beli</p>
+                                    <p>16.072,32</p>
                                 </div>
                                 <span class="w-full rounded-full my-4 h-[3px] bg-white"></span>
-                                <div class="w-full  ">
-                                    <div class="  flex justify-evenly">
-                                        <p>Jual</p>
-                                        <p>1231231</p>
-                                    </div> 
+                                <div class="w-full flex justify-evenly sm:justify-between text-xl">
+                                    <p>Jual</p>
+                                    <p>12.312,31</p>
                                 </div>
+                                <div class="w-full"><span class="text-[10px]">Kurs dapat berubah selama proses transaksi</span></div>
                             </div>
                         </div>
                     </div>
@@ -121,127 +113,128 @@
 
     <!-- Carding-Promo -->
     <div class="w-full bg-slate-200">
-        <div class="w-full px-8 py-14">
-            <a class="text-2xl text-sky-700" href="#" >Promo Terbaru</a>
+        <div class="flex flex-col w-full px-8 py-10">
+            <a class="text-2xl text-sky-500" href="#" >Promo Terbaru</a>
+            <span class="border border-sky-500 w-10 h-[3px] mt-2 bg-sky-500"></span>
         </div>
-        <div class="w-full grid grid-cols-l gap-8">
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
-                <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
-                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
+        <div class="w-full grid grid-cols-l gap-6 lg:grid-cols-4 md:px-6">
+            <div class="mx-auto w-4/6 h-96 sm:aspect-square overflow-hidden rounded-xl shadow-lg bg-white md:w-full md:h-72">
+                <div class="w-full h-2/5 bg-[url('../img/promo1.png')] bg-cover bg-center"></div>
+                <div class=" min-w-min min-h-min p-6 text-lg line-clamp-1">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600 text-sm"><ion-icon class="text-lg mr-2 items-center" name="time-outline"></ion-icon>Berlaku hingga, 31 Jan 2023</div>
             </div>
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
-                <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
-                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
+            <div class="mx-auto w-4/6 h-96 sm:aspect-square overflow-hidden rounded-xl shadow-lg bg-white md:w-full md:h-72">
+                <div class="w-full h-2/5 bg-[url('../img/promo1.png')] bg-cover bg-center"></div>
+                <div class=" min-w-min min-h-min p-6 text-lg line-clamp-1">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600 text-sm"><ion-icon class="text-lg mr-2 items-center" name="time-outline"></ion-icon>Berlaku hingga, 31 Jan 2023</div>
             </div>
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
-                <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
-                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
+            <div class="mx-auto w-4/6 h-96 sm:aspect-square overflow-hidden rounded-xl shadow-lg bg-white md:w-full md:h-72">
+                <div class="w-full h-2/5 bg-[url('../img/promo1.png')] bg-cover bg-center"></div>
+                <div class=" min-w-min min-h-min p-6 text-lg line-clamp-1">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600 text-sm"><ion-icon class="text-lg mr-2 items-center" name="time-outline"></ion-icon>Berlaku hingga, 31 Jan 2023</div>
             </div>
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
-                <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
-                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
+            <div class="mx-auto w-4/6 h-96 sm:aspect-square overflow-hidden rounded-xl shadow-lg bg-white md:w-full md:h-72">
+                <div class="w-full h-2/5 bg-[url('../img/promo1.png')] bg-cover bg-center"></div>
+                <div class=" min-w-min min-h-min p-6 text-lg line-clamp-1">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600 text-sm"><ion-icon class="text-lg mr-2 items-center" name="time-outline"></ion-icon>Berlaku hingga, 31 Jan 2023</div>
             </div>
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
-                <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
-                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
+            <div class="mx-auto w-4/6 h-96 sm:aspect-square overflow-hidden rounded-xl shadow-lg bg-white md:w-full md:h-72">
+                <div class="w-full h-2/5 bg-[url('../img/promo1.png')] bg-cover bg-center"></div>
+                <div class=" min-w-min min-h-min p-6 text-lg line-clamp-1">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600 text-sm"><ion-icon class="text-lg mr-2 items-center" name="time-outline"></ion-icon>Berlaku hingga, 31 Jan 2023</div>
             </div>
-            <div class="mx-auto w-4/6 aspect-[3/4] overflow-hidden   rounded-xl shadow-lg bg-white">
-                <div class="w-full h-2/5   bg-[url('../img/promo1.png')] bg-cover bg-center  -black"></div>
-                <div class=" w-full   h-2/6  -black p-6 text-xl font-bold">Pan & Co Diskom Rp50 Ribu</div> 
-                <div class="px-6 text-slate-600">Berlaku hingga, 31 Jan 2023</div>
+            <div class="mx-auto w-4/6 h-96 sm:aspect-square overflow-hidden rounded-xl shadow-lg bg-white md:w-full md:h-72">
+                <div class="w-full h-2/5 bg-[url('../img/promo1.png')] bg-cover bg-center"></div>
+                <div class=" min-w-min min-h-min p-6 text-lg line-clamp-1">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600 text-sm"><ion-icon class="text-lg mr-2 items-center" name="time-outline"></ion-icon>Berlaku hingga, 31 Jan 2023</div>
             </div>
-            <div class="w-full">
-                <div class="w-full h-full flex justify-center pt-10 group">
-                    <a class="text-lg" href="#">Semua Promo</a>
-                    <div class="h-full w-8 flex justify-center pr-4 group-hover:translate-x-2 duration-200">
-                        <a class="h-4 align-middle   rounded-lg m-1 -rotate-[55deg] inline-block translate-x-full" href="#"></a>
-                        <a class="h-4 align-middle   rounded-lg -m-1 rotate-[55deg] inline-block translate-y-full" href="#"></a>
-                    </div>
-                </div>
+            <div class="mx-auto w-4/6 h-96 sm:aspect-square overflow-hidden rounded-xl shadow-lg bg-white md:w-full md:h-72">
+                <div class="w-full h-2/5 bg-[url('../img/promo1.png')] bg-cover bg-center"></div>
+                <div class=" min-w-min min-h-min p-6 text-lg line-clamp-1">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600 text-sm"><ion-icon class="text-lg mr-2 items-center" name="time-outline"></ion-icon>Berlaku hingga, 31 Jan 2023</div>
+            </div>
+            <div class="mx-auto w-4/6 h-96 sm:aspect-square overflow-hidden rounded-xl shadow-lg bg-white md:w-full md:h-72">
+                <div class="w-full h-2/5 bg-[url('../img/promo1.png')] bg-cover bg-center"></div>
+                <div class=" min-w-min min-h-min p-6 text-lg line-clamp-1">Pan & Co Diskom Rp50 Ribu</div> 
+                <div class="px-6 text-slate-600 text-sm"><ion-icon class="text-lg mr-2 items-center" name="time-outline"></ion-icon>Berlaku hingga, 31 Jan 2023</div>
+            </div>
+            <div class="w-full h-full flex justify-center pt-10 mb-9 group text-sky-500 hover:text-sky-700">
+                <a class="text-xl " href="#">Semua Promo <i class="pl-1 fa-solid fa-chevron-right group-hover:translate-x-2 transition-all duration-300"></i></a>                    
             </div>
         </div>
     </div>
 
     <!-- Berita -->
-    <div class="w-full bg-white">
-        <div class="w-full pt-14 pb-24 flex justify-center">
-            <ul class=" px-6 flex text-[25px] grid-cols-3 gap-10 text-sky-500 overflow-x-scroll">
-                <li class="flex flex-col group mb-8">
+    <div class="w-full">
+        <div class="w-full mt-14 mb-14 flex justify-center sm:block sm:mb-2 md:mb-4">
+            <ul class=" px-6 flex text-[25px] grid-cols-3 gap-10 text-sky-500 overflow-x-scroll sm:overflow-hidden">
+                <li class="flex flex-col group mb-8 md:mb-1">
                     <a class="peer" href="#"> New&Features</a>
-                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500    -sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
+                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
                 </li>
                 <li class="flex flex-col group">
                     <a class="peer" href="#">Edukatips</a>
-                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500    -sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
+                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
                 </li>
                 <li class="flex flex-col group">
                     <a class="peer" href="#">#AwasModus</a>
-                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500    -sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
+                    <span class="peer h-1 w-1 rounded-full mt-3 invisible bg-sky-500 peer-focus:visible peer-focus:w-14 duration-200"></span>
                 </li>
             </ul>
         </div>
     </div>
 
-    <!-- three features bottom -->
-    <div class="w-full px-10 bg-white">
-        <div class="w-full bg-white  cursor-pointer">
-            <div class="w-full h-56 bg-slate-700 rounded-t-3xl overflow-hidden">
-                <div class="w-full h-full bg-[url('../img/cop-berita.png')] bg-cover bg-center"></div>
-            </div>
-            <div class="w-full">
-                <div class="w-full p-8 text-lg text-slate-500">
-                    25 Mei 2023 | Berita
+    <!-- three features top *mengatur agar feature top di lebar layar lg mengecil -->
+    <div class="lg:flex">
+        <div class="w-full px-10 lg:w-[35%] lg:px-4">
+            <div class="w-full bg-white  cursor-pointer">
+                <div class="w-full h-56 bg-slate-700 rounded-t-3xl overflow-hidden">
+                    <div class="w-full h-full bg-[url('../img/cop-berita.png')] bg-cover bg-center"></div>
                 </div>
-                <div class="w-full px-8 text-2xl">
-                    Investasi Semakin Mudah Dengan Limit Baru!
+                <div class="w-full">
+                    <div class="w-full p-8 text-lg text-slate-500">
+                        25 Mei 2023 | Berita
+                    </div>
+                    <div class="w-full px-8 text-2xl">
+                        Investasi Semakin Mudah Dengan Limit Baru!
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- carding-content-feature -->
-    <div class="w-full pt-40 bg-white">
-        <div class="w-full px-8 bg-white grid grid-flow-row gap-9">
-            <div class="w-full h-40 shadow-lg overflow-hidden rounded-xl flex flex-row cursor-pointer">
-                <div class="w-3/6 bg-[url('../img/crd-imgcontent1.jpg')] bg-center bg-cover"></div>
-                <div class="w-full h-full p-6 flex flex-col ">
-                    <div class="text-slate-600">17 Mei 2023 | Berita</div>
-                    <div class="mt-2 text-xl">Perubahan Biaya Admin Top Up Pulsa XL</div>
-                </div>
-            </div>
-            <div class="w-full h-40 shadow-lg overflow-hidden rounded-xl flex flex-row cursor-pointer">
-                <div class="w-3/6 bg-[url('../img/crd-imgcontent1.jpg')] bg-center bg-cover"></div>
-                <div class="w-full h-full p-6 flex flex-col ">
-                    <div class="text-slate-600">17 Mei 2023 | Berita</div>
-                    <div class="mt-2 text-xl">Perubahan Biaya Admin Top Up Pulsa XL</div>
-                </div>
-            </div>
-            <div class="w-full h-40 shadow-lg overflow-hidden rounded-xl flex flex-row cursor-pointer">
-                <div class="w-3/6 bg-[url('../img/crd-imgcontent1.jpg')] bg-center bg-cover"></div>
-                <div class="w-full h-full p-6 flex flex-col ">
-                    <div class="text-slate-600">17 Mei 2023 | Berita</div>
-                    <div class="mt-2 text-xl">Perubahan Biaya Admin Top Up Pulsa XL</div>
-                </div>
-            </div>
-            <div class="w-full h-40 shadow-lg overflow-hidden rounded-xl flex flex-row cursor-pointer">
-                <div class="w-3/6 bg-[url('../img/crd-imgcontent1.jpg')] bg-center bg-cover"></div>
-                <div class="w-full h-full p-6 flex flex-col ">
-                    <div class="text-slate-600">17 Mei 2023 | Berita</div>
-                    <div class="mt-2 text-xl">Perubahan Biaya Admin Top Up Pulsa XL</div>
-                </div>
-            </div>
-            <div class="w-full">
-                <div class="w-full h-full flex justify-center pt-16 group">
-                    <a class="text-lg text-sky-500" href="#">Semua Berita</a>
-                    <div class="h-full w-8 flex justify-center pr-4 group-hover:translate-x-2 duration-200">
-                        <a class="h-4 align-middle    -sky-500 rounded-lg m-1 -rotate-[55deg] inline-block translate-x-full" href="#"></a>
-                        <a class="h-4 align-middle    -sky-500 rounded-lg -m-1 rotate-[55deg] inline-block translate-y-full" href="#"></a>
+        <!-- carding-content-feature -->
+        <div class="w-full mt-40 bg-white">
+            <div class="w-full px-8 bg-white grid grid-flow-row gap-9">
+                <div class="w-full h-40 shadow-lg overflow-hidden rounded-xl flex flex-row cursor-pointer">
+                    <div class="w-3/6 bg-[url('../img/crd-imgcontent1.jpg')] bg-center bg-cover"></div>
+                    <div class="w-full h-full p-6 flex flex-col ">
+                        <div class="text-slate-600">17 Mei 2023 | Berita</div>
+                        <div class="mt-2 text-xl">Perubahan Biaya Admin Top Up Pulsa XL</div>
                     </div>
+                </div>
+                <div class="w-full h-40 shadow-lg overflow-hidden rounded-xl flex flex-row cursor-pointer">
+                    <div class="w-3/6 bg-[url('../img/crd-imgcontent1.jpg')] bg-center bg-cover"></div>
+                    <div class="w-full h-full p-6 flex flex-col ">
+                        <div class="text-slate-600">17 Mei 2023 | Berita</div>
+                        <div class="mt-2 text-xl">Perubahan Biaya Admin Top Up Pulsa XL</div>
+                    </div>
+                </div>
+                <div class="w-full h-40 shadow-lg overflow-hidden rounded-xl flex flex-row cursor-pointer">
+                    <div class="w-3/6 bg-[url('../img/crd-imgcontent1.jpg')] bg-center bg-cover"></div>
+                    <div class="w-full h-full p-6 flex flex-col ">
+                        <div class="text-slate-600">17 Mei 2023 | Berita</div>
+                        <div class="mt-2 text-xl">Perubahan Biaya Admin Top Up Pulsa XL</div>
+                    </div>
+                </div>
+                <div class="w-full h-40 shadow-lg overflow-hidden rounded-xl flex flex-row cursor-pointer">
+                    <div class="w-3/6 bg-[url('../img/crd-imgcontent1.jpg')] bg-center bg-cover"></div>
+                    <div class="w-full h-full p-6 flex flex-col ">
+                        <div class="text-slate-600">17 Mei 2023 | Berita</div>
+                        <div class="mt-2 text-xl">Perubahan Biaya Admin Top Up Pulsa XL</div>
+                    </div>
+                </div>
+                <div class="mx-auto my-10 group">
+                    <a class="text-lg text-sky-500" href="#">Semua Berita<i class="px-2 fa-solid fa-chevron-right group-hover:translate-x-2 transition-all duration-300"></i></a>
                 </div>
             </div>
         </div>
@@ -257,11 +250,11 @@
                 <div class="group flex flex-col justify-between">
                     <a class="w-full flex justify-between group peer" href="#">
                         <p class="">Kantor Pusat</p>
-                        <svg class="w-6 h-6 focus-within:origin-center group-focus:rotate-180 duration-200 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <svg class="w-6 h-6 focus-within:origin-center group-focus:rotate-180 duration-200 md:invisible" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg> 
                     </a>
-                    <div class="mt-4 hidden peer-focus:block">
+                    <div class="mt-4 hidden peer-focus:block sm:block">
                         <div class="text-sm text-white">
                             <p>Menara BCA, Grand Indonesia</p>
                             <p>Jln. MH Thamrin No. 1</p>
@@ -279,11 +272,11 @@
                 <div class="mt-6 group flex flex-col justify-between">
                     <a class="w-full flex justify-between group peer" href="#">
                         <p class="">Hubungi Kami</p>
-                        <svg class="w-6 h-6 focus-within:origin-center group-focus:rotate-180 duration-200 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <svg class="w-6 h-6 focus-within:origin-center group-focus:rotate-180 duration-200 md:invisible" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg> 
                     </a>
-                    <div class="hidden peer-focus:block mt-4 ">
+                    <div class="hidden peer-focus:block mt-4 sm:block">
                         <a class="w-full p-2 text-sm text-white flex hover:underline" href="#">
                             <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -307,11 +300,11 @@
                 <div class="mt-6 flex flex-col justify-between">
                     <a class="w-full flex justify-between group peer" href="#">
                         <p class="">Media Sosial</p>
-                        <svg class="w-6 h-6 focus-within:origin-center group-focus:rotate-180 duration-200 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <svg class="w-6 h-6 focus-within:origin-center group-focus:rotate-180 duration-200 md:invisible" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg> 
                     </a>
-                    <div class="w-full mt-4 hidden peer-focus:block">
+                    <div class="w-full mt-4 hidden peer-focus:block sm:block">
                         <div class="flex">
                             <div class="w-full flex-1 mr-6">
                                 <a class="w-full p-2 flex text-sm hover:underline" href="#">
@@ -343,44 +336,46 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="mt-6 mb-24">
+                        <div class="mt-6 mb-24 sm:mb-16">
                             <a class="text-lg underline" href="#">Lihat Semua Media Sosial</a>
                         </div>
                     </div>
                 </div>   
             </div>
 
-            <div class="w-full mt-8">
-                <p class="text-xl text-white">Dapatkan Promo dan Penawaran Terbaik Dari BCA</p>
+            <div class="w-full mt-4">
+                <p class="text-xl md:text-lg text-white">Dapatkan Promo dan Penawaran Terbaik Dari BCA</p>
             </div>
 
             <!-- Input Email -->
-            <div class="w-full mt-10">
+            <div class="w-full mt-10 md:pl-16">
                 <form action="">
                     <label for="email" class="flex flex-wrap">
                         <input class="flex-1 bg-transparent text-xl text-white focus:outline-none peer" type="text" placeholder="Mauskan Email">
                         <svg class="flex-none w-6 h-6 text-white cursor-pointer" id="email" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>                          
-                        <span class="w-full mt-2   peer-focus: -sky-500 transition-all duration-200" id="email"></span>
+                        <span class="w-full mt-2 border peer-focus:border-sky-500 transition-all duration-200" id="email"></span>
                     </label>
                 </form>
             </div>
 
-            <div class="w-full mt-2">
+            <div class="w-full mt-2 md:pl-16">
                 <p class="text-white text-sm ">This site is protected by reCAPTCHA and the Google <a class="underline" href="#">Privacy Policy</a> and <a class="underline" href="#">Terms of Service</a> apply.</p>
             </div>
 
             <!-- Menu Footer Terms -->
-            <div class="w-full mt-8">
-                <ul class="w-full p-0 text-white font-semibold flex divide-x">
-                    <li class="flex"><a class=" mx-6 items-center justify-center hover:underline" href="#">SBDK</a></li>
-                    <li class="flex"><a class=" mx-6 items-center justify-center hover:underline" href="#">Kebijakan</a></li>
-                    <li class="flex"><a class=" mx-6 items-center justify-center hover:underline" href="#">Syarat & Ketentuan</a></li>                                                                            
+            <span class="w-full mt-20 border hidden md:block"></span>
+
+            <div class="flex w-full mt-16 md:mt-12">
+                <ul class="w-full text-white md:font-semibold flex justify-between divide-x md:justify-end md:text-sm ">
+                    <li class="text-[12px]"><a class="mx-6 items-center justify-center hover:underline" href="#">SBDK</a></li>
+                    <li class="text-[12px]"><a class="mx-6 tems-center justify-center hover:underline" href="#">Kebijakan</a></li>
+                    <li class="text-[12px]"><a class="mx-6 items-center justify-center hover:underline" href="#">Syarat & Ketentuan</a></li>                                                                            
                 </ul>
             </div>
 
-            <div class="w-full mt-12 mb-36">
+            <div class="w-full mt-8 mb-36">
                 <p class="text-white text-sm">BCA Berizin dan diawasi oleh Otoritas Jasa Keuangan</p>
                 <p class="text-white text-sm">BCA Merupakan Peserta penjamin LPS</p>
             </div>
@@ -388,6 +383,9 @@
         </div>
     </footer>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 </body>
